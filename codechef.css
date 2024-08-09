@@ -1,0 +1,153 @@
+*{
+    margin:0;
+}
+.main{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.left{
+    height: 100vh;
+    width:20%;
+    background-color: red;
+}
+
+.right{
+    height: 100vh;
+    width:80%;
+    background-color: white;
+}
+.nav-bar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    position: relative;
+    background-color: whitesmoke;
+    height:85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow-y:auto;
+}
+.received{
+    width:15rem;
+    height:3rem;
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border-bottom-left-radius: 2px;
+    background-color: rgba(158, 212, 158, 0.838);
+}
+
+.sent{
+    width:15rem;
+    display: flex;
+    padding: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-wrap:anywhere;
+    border-radius: 15px;
+    border-bottom-right-radius: 2px;
+    background-color: rgba(147, 225, 238, 0.838);
+}
+.received-time{
+    margin-top: 7px;
+    margin-left: 20px;
+}
+.received-container{
+    margin-left: 20px;
+}
+.sent-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 20px;
+    
+    
+}
+.sent-time{
+    margin-top: 7px;
+    margin-right:20px;
+}
+
+#input{
+    height: 9vh;
+    width:90%;
+    border: none;
+    font-size: 20px;
+    outline: none;
+}
+
+@media screen and (max-width:550px){
+    .left{
+        width: 0px;
+    }
+    .right{
+        width: 100%;
+    }
+
+    .sent-container{
+        padding: 5px;
+        font-size: small;
+        padding-top: 5px;
+    }
+    .received{
+        padding: 5px;
+        font-size: small;
+    }
+
+    
+}
+
+@media screen and (max-width:430px){
+    .received,.sent{
+        
+        width: 10rem;
+    }
+    .sent{
+        margin-left: 5px;
+    }
+    .received{
+        padding-left: 5px;
+    }
+
+    .received-container{
+        margin-left: 5px;
+    }
+    .sent-container{
+        margin-right: 5px;
+    }
+
+    .sent-time,.received-time{
+        font-size: small;
+    }
+    
+    .nav-bar{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    /* .content{
+        height: vh;
+    } */
+}
+.submit-button{
+    margin-top: 15px;
+    width: 20px;
+    fill: rgb(51, 151, 245);
+    
+}
+
+.input-box{
+    display: flex;
+
+}
